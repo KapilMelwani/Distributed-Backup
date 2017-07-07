@@ -1,0 +1,11 @@
+message ChattingMessages{
+    enum typeMessage{
+        TEXT = 1;
+        FILE = 2;
+    }
+    optional typeMessage type = 20;
+    optional string sourceRoute = 30;
+    optional int32 sizeFile = 40;
+    optional string text = 50;
+    optional string clientname = 60;
+}
